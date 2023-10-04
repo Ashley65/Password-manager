@@ -1,10 +1,11 @@
 
+#include "gui/mainWin.h"
 #include <QtWidgets>
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    QWidget window;
+    mainWin window;
     window.resize(360, 240);
     window.show();
     window.setWindowTitle(

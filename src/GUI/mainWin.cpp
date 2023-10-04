@@ -22,6 +22,12 @@
 
 
 
-const QString mainWin::BaseWindowTitle = "Password Manager";
-
-mainWin* mainWin::instance = nullptr;
+mainWin::mainWin(const QString &searchText, QWidget *parent)
+    : QMainWindow(parent), ui(new Ui::mainWin)
+{
+    ui -> setupUi(this);
+}
+mainWin::~mainWin()
+{
+    delete ui;
+}

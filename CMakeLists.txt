@@ -14,7 +14,8 @@ find_package(Qt5 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(PasswordManager src/main.cpp)
+add_executable(PasswordManager src/main.cpp
+        src/GUI/mainWin.cpp)
 target_link_libraries(PasswordManager
         Qt5::Core
         Qt5::Gui
